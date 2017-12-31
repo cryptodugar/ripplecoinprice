@@ -58,7 +58,7 @@
     <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.0a0756cf5fd6a263c896e31e41792129.js"></script>
     <meta name="description" content="Ripple (XRP) Price updated in real-time every minute ✔ 5 exchanges ✔ 7 XRP currency pairs ">
-    <link rel="canonical" href="www.ripplecoinprice.org">
+    <link rel="canonical" href="http://www.ripplecoinprice.org">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
 
@@ -67,14 +67,14 @@
     <meta property="og:url" content="http://ripplecoinprice.org">
     <meta property="og:site_name" content="ripplecoinprice">
     <meta property="fb:app_id" content="ripplecoinprice">
-    <meta property="og:image" content="/ripple.png">
+    <meta property="og:image" content="//ripple.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="Ripple (XRP) Price updated in real-time every minute ✔ 5 exchanges ✔ 7 XRP currency pairs ✔ No advertising">
     <meta name="twitter:title" content="Ripple Price - Mobile Friendly Price of XRP">
     <meta name="twitter:site" content="@ankdugar">
     <meta name="twitter:creator" content="@ankdugar">
     <script type="application/ld+json">
-        {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/localhost:63198\/","name":"ripplecoinprice","potentialAction":{"@type":"SearchAction","target":"https:\/\/localhost:63198\/?s={search_term_string}","query-input":"required name=search_term_string"}}
+        {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.ripplecoinprice.org\/","name":"ripplecoinprice","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.ripplecoinprice.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}
     </script>
 
     <link rel="dns-prefetch" href="//code.jquery.com">
@@ -105,273 +105,274 @@
                 </script>
             </marquee>
         </span>
-            <table width="100%" id="ripplepricediv">
-                <tr>
-                    <td id="trendline" width="30%" align="left">
-                        <img width="10%" src="/ripple.png" /> <span style="font-size:2em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><b>RippleCoinPrice.org</b></span><span style="font-size:1.0em; font-family: 'Arial Narrow', Arial, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIVE - Ripple Coin Price</span><img width="3%" align="right" src="https://www.nrem.iastate.edu/pewi/pewi3/imgs/recordingIcon.gif"/>
-                        <br /><br /><br />
+        <table width="100%" id="ripplepricediv">
+            <tr>
+                <td id="trendline" width="30%" align="left">
+                    <img width="10%" src="//ripple.png" /> <span style="font-size:2em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><b>RippleCoinPrice.org</b></span><span style="font-size:1.0em; font-family: 'Arial Narrow', Arial, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIVE - Ripple Coin Price</span><img width="3%" align="right" src="https://www.nrem.iastate.edu/pewi/pewi3/imgs/recordingIcon.gif" />
+                    <br /><br /><br />
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[scripts.length - 1];
+                        (function () {
+                            var appName = encodeURIComponent(window.location.hostname);
+                            if (appName == "") { appName = "local"; }
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl + 'serve/v1/coin/chart?fsym=XRP&tsym=USD';
+                            s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+                    </script>
+
+                </td>
+
+                <td width="40%" id="mainvalue">
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[scripts.length - 1];
+                        var cccTheme = { "General": { "borderWidth": "0px", "borderRadius": "2 2 2 2" }, "Highlights": { "borderColor": "#ffffff" }, "Conversion": { "lineHeight": "10px", "color": "#fff" } };
+                        (function () {
+                            var appName = encodeURIComponent(window.location.hostname);
+                            if (appName == "") { appName = "local"; }
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl + 'serve/v1/coin/summary?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC';
+                            s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+
+                    </script>
+
+                </td>
+                <td id="currencypairs" width="30%">
+
+                    <!--<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />-->
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[scripts.length - 1];
+                        (function () {
+                            var appName = encodeURIComponent(window.location.hostname);
+                            if (appName == "") { appName = "local"; }
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl + 'serve/v1/coin/list?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC';
+                            s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+                    </script>
+                    <br />
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[scripts.length - 1];
+                        var cccTheme = { "General": { "borderColor": "#ffffff", "poweredByColor": "#fff", "headerText": "Crypto/Fiat Converter" }, "Form": {} };
+                        (function () {
+                            var appName = encodeURIComponent(window.location.hostname);
+                            if (appName == "") { appName = "local"; }
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl + 'serve/v1/coin/converter?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC,INR';
+                            s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+                    </script>
+
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+
+
+
+
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                //    var $div2blink = $(".price-value");
+                //    var backgroundInterval = setInterval(function () {
+                //        $div2blink.toggleClass("backgroundRed");
+                //    }, 5000)
+                var backgroundInterval = setInterval(function () {
+
+                    if ($("#tabElemUSDSummary").hasClass('active') == true) {
+                        if ($("#cccSummaryChangePct1DUSDContainer").hasClass("positive") > 0) {
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundRed");
+                            $div2blink.toggleClass("backgroundGreen");
+
+
+                        }
+                        if ($("#cccSummaryChangePct1DUSDContainer").hasClass("negative") > 0) {
+
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundGreen");
+                            $div2blink.toggleClass("backgroundRed");
+
+                        }
+                        $(document).prop('title', $('#cccSummaryPriceCurrentUSD').text() + ' (XRP-USD Live Ripple coin Price');
+                    }
+
+                    if ($("#tabElemEURSummary").hasClass('active') == true) {
+                        if ($("#cccSummaryChangePct1DEURContainer").hasClass("positive") > 0) {
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundRed");
+                            $div2blink.toggleClass("backgroundGreen");
+
+
+                        }
+                        if ($("#cccSummaryChangePct1DEURContainer").hasClass("negative") > 0) {
+
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundGreen");
+                            $div2blink.toggleClass("backgroundRed");
+
+                        }
+                        $(document).prop('title', $('#cccSummaryPriceCurrentEUR').text() + ' (XRP-EUR Live Ripple coin Price');
+                    }
+
+                    if ($("#tabElemCNYSummary").hasClass('active') == true) {
+                        if ($("#cccSummaryChangePct1DCNYContainer").hasClass("positive") > 0) {
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundRed");
+                            $div2blink.toggleClass("backgroundGreen");
+
+
+                        }
+                        if ($("#cccSummaryChangePct1DCNYContainer").hasClass("negative") > 0) {
+
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundGreen");
+                            $div2blink.toggleClass("backgroundRed");
+
+                        }
+                        $(document).prop('title', $('#cccSummaryPriceCurrentCNY').text() + ' (XRP-CNY Live Ripple coin Price');
+                    }
+
+                    if ($("#tabElemGBPSummary").hasClass('active') == true) {
+                        if ($("#cccSummaryChangePct1DGBPContainer").hasClass("positive") > 0) {
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundRed");
+                            $div2blink.toggleClass("backgroundGreen");
+
+
+                        }
+                        if ($("#cccSummaryChangePct1DGBPContainer").hasClass("negative") > 0) {
+
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundGreen");
+                            $div2blink.toggleClass("backgroundRed");
+
+                        }
+                        $(document).prop('title', $('#cccSummaryPriceCurrentGBP').text() + ' (XRP-GBP Live Ripple coin Price');
+                    }
+
+                    if ($("#tabElemBTCSummary").hasClass('active') == true) {
+                        if ($("#cccSummaryChangePct1DBTCContainer").hasClass("positive") > 0) {
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundRed");
+                            $div2blink.toggleClass("backgroundGreen");
+
+
+                        }
+                        if ($("#cccSummaryChangePct1DBTCContainer").hasClass("negative") > 0) {
+
+                            var $div2blink = $(".price-value");
+                            $div2blink.removeClass("backgroundGreen");
+                            $div2blink.toggleClass("backgroundRed");
+
+                        }
+                        $(document).prop('title', $('#cccSummaryPriceCurrentBTC').text() + ' (XRP-BTC Live Ripple coin Price');
+                    }
+                }, 5000);
+                $(".cryptocompare-logo > img").attr("src", "");
+                $(".cryptocompare-logo").html("");
+                $(".powered-by-cryptocompare").html("");
+                $(".poweredBy").html("")
+                $("")
+
+
+            }, 2500);
+
+        });
+
+
+    </script>
+    <div style="width:100%">
+        <table width="100%">
+            <tr>
+                <td width="70%">
+                    <span id="ripplechartcontainer">
+
+
                         <script type="text/javascript">
                             baseUrl = "https://widgets.cryptocompare.com/";
                             var scripts = document.getElementsByTagName("script");
                             var embedder = scripts[scripts.length - 1];
+                            var cccTheme = { "General": { "borderColor": "#ffffff" }, "Tabs": { "activeBorderColor": "#0000ff" } };
                             (function () {
                                 var appName = encodeURIComponent(window.location.hostname);
                                 if (appName == "") { appName = "local"; }
                                 var s = document.createElement("script");
                                 s.type = "text/javascript";
                                 s.async = true;
-                                var theUrl = baseUrl + 'serve/v1/coin/chart?fsym=XRP&tsym=USD';
+                                var theUrl = baseUrl + 'serve/v3/coin/chart?fsym=XRP&tsyms=USD,EUR,CNY,GBP';
                                 s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
                                 embedder.parentNode.appendChild(s);
                             })();
                         </script>
 
-                    </td>
-                  
-                    <td width="40%" id="mainvalue">
-                        <script type="text/javascript">
-                            baseUrl = "https://widgets.cryptocompare.com/";
-                            var scripts = document.getElementsByTagName("script");
-                            var embedder = scripts[scripts.length - 1];
-                            var cccTheme = { "General": { "borderWidth": "0px", "borderRadius": "2 2 2 2" }, "Highlights": { "borderColor": "#ffffff" }, "Conversion": { "lineHeight": "10px", "color": "#fff" } };
-                            (function () {
-                                var appName = encodeURIComponent(window.location.hostname);
-                                if (appName == "") { appName = "local"; }
-                                var s = document.createElement("script");
-                                s.type = "text/javascript";
-                                s.async = true;
-                                var theUrl = baseUrl + 'serve/v1/coin/summary?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC';
-                                s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                embedder.parentNode.appendChild(s);
-                            })();
-
-                        </script>
-
-                    </td>
-                    <td id="currencypairs" width="30%">
-
-                        <!--<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />-->
-                        <script type="text/javascript">
-                            baseUrl = "https://widgets.cryptocompare.com/";
-                            var scripts = document.getElementsByTagName("script");
-                            var embedder = scripts[scripts.length - 1];
-                            (function () {
-                                var appName = encodeURIComponent(window.location.hostname);
-                                if (appName == "") { appName = "local"; }
-                                var s = document.createElement("script");
-                                s.type = "text/javascript";
-                                s.async = true;
-                                var theUrl = baseUrl + 'serve/v1/coin/list?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC';
-                                s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                embedder.parentNode.appendChild(s);
-                            })();
-                        </script>
-                        <br />
-                        <script type="text/javascript">
-                            baseUrl = "https://widgets.cryptocompare.com/";
-                            var scripts = document.getElementsByTagName("script");
-                            var embedder = scripts[scripts.length - 1];
-                            var cccTheme = { "General": { "borderColor": "#ffffff", "poweredByColor": "#fff", "headerText": "Crypto/Fiat Converter" }, "Form": {} };
-                            (function () {
-                                var appName = encodeURIComponent(window.location.hostname);
-                                if (appName == "") { appName = "local"; }
-                                var s = document.createElement("script");
-                                s.type = "text/javascript";
-                                s.async = true;
-                                var theUrl = baseUrl + 'serve/v1/coin/converter?fsym=XRP&tsyms=USD,EUR,CNY,GBP,BTC,INR';
-                                s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                embedder.parentNode.appendChild(s);
-                            })();
-                        </script>
-
-                    </td>
-
-                </tr>
-            </table>
-</div>
-
-            <script type="text/javascript">
 
 
-                            
+                    </span>
+                </td>
 
-                $(document).ready(function () {
-
-                    setTimeout(function () {
-                        //    var $div2blink = $(".price-value");
-                        //    var backgroundInterval = setInterval(function () {
-                        //        $div2blink.toggleClass("backgroundRed");
-                        //    }, 5000)
-                        var backgroundInterval = setInterval(function () {
-
-                            if ($("#tabElemUSDSummary").hasClass('active') == true)
-                            {
-                                if ($("#cccSummaryChangePct1DUSDContainer").hasClass("positive") > 0) {
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundRed");
-                                    $div2blink.toggleClass("backgroundGreen");
-                                    
-
-                                }
-                                if ($("#cccSummaryChangePct1DUSDContainer").hasClass("negative") > 0) {
-
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundGreen");
-                                    $div2blink.toggleClass("backgroundRed");
-                                    
-                                }
-                                $(document).prop('title', $('#cccSummaryPriceCurrentUSD').text() + ' (XRP-USD Live Ripple coin Price');
-                            }
-
-                            if ($("#tabElemEURSummary").hasClass('active') == true) {
-                                if ($("#cccSummaryChangePct1DEURContainer").hasClass("positive") > 0) {
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundRed");
-                                    $div2blink.toggleClass("backgroundGreen");
+                <td id="newArticles" width="60%">
 
 
-                                }
-                                if ($("#cccSummaryChangePct1DEURContainer").hasClass("negative") > 0) {
-
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundGreen");
-                                    $div2blink.toggleClass("backgroundRed");
-
-                                }
-                                $(document).prop('title', $('#cccSummaryPriceCurrentEUR').text() + ' (XRP-EUR Live Ripple coin Price');
-                            }
-
-                            if ($("#tabElemCNYSummary").hasClass('active') == true) {
-                                if ($("#cccSummaryChangePct1DCNYContainer").hasClass("positive") > 0) {
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundRed");
-                                    $div2blink.toggleClass("backgroundGreen");
-
-
-                                }
-                                if ($("#cccSummaryChangePct1DCNYContainer").hasClass("negative") > 0) {
-
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundGreen");
-                                    $div2blink.toggleClass("backgroundRed");
-
-                                }
-                                $(document).prop('title', $('#cccSummaryPriceCurrentCNY').text() + ' (XRP-CNY Live Ripple coin Price');
-                            }
-
-                            if ($("#tabElemGBPSummary").hasClass('active') == true) {
-                                if ($("#cccSummaryChangePct1DGBPContainer").hasClass("positive") > 0) {
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundRed");
-                                    $div2blink.toggleClass("backgroundGreen");
-
-
-                                }
-                                if ($("#cccSummaryChangePct1DGBPContainer").hasClass("negative") > 0) {
-
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundGreen");
-                                    $div2blink.toggleClass("backgroundRed");
-
-                                }
-                                $(document).prop('title', $('#cccSummaryPriceCurrentGBP').text() + ' (XRP-GBP Live Ripple coin Price');
-                            }
-
-                            if ($("#tabElemBTCSummary").hasClass('active') == true) {
-                                if ($("#cccSummaryChangePct1DBTCContainer").hasClass("positive") > 0) {
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundRed");
-                                    $div2blink.toggleClass("backgroundGreen");
-
-
-                                }
-                                if ($("#cccSummaryChangePct1DBTCContainer").hasClass("negative") > 0) {
-
-                                    var $div2blink = $(".price-value");
-                                    $div2blink.removeClass("backgroundGreen");
-                                    $div2blink.toggleClass("backgroundRed");
-
-                                }
-                                $(document).prop('title', $('#cccSummaryPriceCurrentBTC').text() + ' (XRP-BTC Live Ripple coin Price');
-                            }
-                        }, 5000);
-                        $(".cryptocompare-logo > img").attr("src", "");
-                        $(".cryptocompare-logo").html("");
-                        $(".powered-by-cryptocompare").html("");
-                        $(".poweredBy").html("")
-                        $("")
-                      
-
-                    }, 2500);
-
-                });
-
-
-            </script>
-            <table width="100%">
-                <tr>
-                    <td width="70%">
-                        <span id="ripplechartcontainer">
-
-                            <p>
-                                <script type="text/javascript">
-                                    baseUrl = "https://widgets.cryptocompare.com/";
-                                    var scripts = document.getElementsByTagName("script");
-                                    var embedder = scripts[scripts.length - 1];
-                                    var cccTheme = { "General": { "borderColor": "#ffffff" }, "Tabs": { "activeBorderColor": "#0000ff" } };
-                                    (function () {
-                                        var appName = encodeURIComponent(window.location.hostname);
-                                        if (appName == "") { appName = "local"; }
-                                        var s = document.createElement("script");
-                                        s.type = "text/javascript";
-                                        s.async = true;
-                                        var theUrl = baseUrl + 'serve/v3/coin/chart?fsym=XRP&tsyms=USD,EUR,CNY,GBP';
-                                        s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                        embedder.parentNode.appendChild(s);
-                                    })();
-                                </script>
-
-
-                            </p>
-                        </span>
-                    </td>
-
-                    <td id="newArticles" width="50%">
-
-
-                        <div class="col-sm-6 text-left">
-                            <a class="twitter-timeline" href="https://twitter.com/Ripple" data-widget-id="506520279636377601" data-screen-name="Ripple">Tweets by @Ripple</a>
-                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-                        </div>
-
-                    </td>
-                    
-                </tr>
-                    </table>
-   
-            <footer>
-                <h2 style="text-align:center">ripplecoinprice.org</h2>
-                <div style="text-align:center">
-                    <div style="text-align:center">
-                        <p>This website is intended to provide a clear summary of ripple's current and historical price as well as important updates from the industry. I've also included a number of ERC20 tokens which can be found in the tokens tab at the top right.<br />Prices are updated every minute in real-time and the open/close prices are recorded at midnight UTC. Bookmark us!</p>
+                    <div class="text-left">
+                        <a class="twitter-timeline" href="https://twitter.com/Ripple" data-widget-id="506520279636377601" data-screen-name="Ripple">Tweets by @Ripple</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
                     </div>
-                    <div style="align-content:center">
-                        <p>Please note, weighted average exchange prices update very slowly for some XRP and token pairs. <strong>Disclaimer</strong>: content on this website should not be used when making investment decisions. Investors should seek professional financial advice.</p>
-                        <p>© ripplecoinprice</p>
-                    </div>
-                </div>
+
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h2 style="text-align:center">ripplecoinprice.org</h2>
+        <div style="text-align:center">
+            <div style="text-align:center">
+                <p>This website is intended to provide a clear summary of ripple's current and historical price as well as important updates from the industry. I've also included a number of ERC20 tokens which can be found in the tokens tab at the top right.<br />Prices are updated every minute in real-time and the open/close prices are recorded at midnight UTC. Bookmark us!</p>
+            </div>
+            <div style="align-content:center">
+                <p>Please note, weighted average exchange prices update very slowly for some XRP and token pairs. <strong>Disclaimer</strong>: content on this website should not be used when making investment decisions. Investors should seek professional financial advice.</p>
+                <p>© ripplecoinprice</p>
+            </div>
+        </div>
 
 
-                
 
-                    <ul style="align-content:center;vertical-align:central">
 
-                        <li><a style="font-size:x-large" href="/ripple,html">What is ripple?</a></li>
-                        <li><a style="font-size:x-large" href="/Blockchain.html">Blockchain Glossary</a></li>
-                        <li><a style="font-size:x-large" href="/Privacy.html">Privacy Policy</a></li>
-                        <li><a style="font-size:x-large" href="/About.html">About Us</a></li>
+        <ul style="align-content:center;vertical-align:central">
 
-                    </ul>
-              
-                </footer>
+
+            <li><a style="font-size:x-large" href="/">Home</a></li>
+            <li><a style="font-size:x-large" href="/Blockchain.html">Blockchain Glossary</a></li>
+            <li><a style="font-size:x-large" href="/ripple.html">What is ripple?</a></li>
+            <li><a style="font-size:x-large" href="/About.html">About Us</a></li>
+
+        </ul>
+
+    </footer>
 </body>
